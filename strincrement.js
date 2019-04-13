@@ -5,7 +5,7 @@ function incrementString (strng) {
   let str = strng.match(/\D+/g);
   let numPlus = Number(nums) + incrementor;
   
-  str === null ? result = numPlus.toString().padStart(nums[0].length, '0')
+  str === null ? result = numPlus.toString().padStart(nums[0].length, '0') // retains extra 0's in formatting
   : nums === null ? result = str.join('') + incrementor
   : result = str.join('') + numPlus.toString().padStart(nums[0].length, '0');
   
