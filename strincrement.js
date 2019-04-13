@@ -1,6 +1,6 @@
 function incrementString (strng) {
   let result = '';
-  let incrementor = 1;
+  let incrementor = 1; // amount to increment number by
   let nums = strng.match(/\d+/g);
   let str = strng.match(/\D+/g);
   let numPlus = Number(nums) + incrementor;
@@ -9,5 +9,5 @@ function incrementString (strng) {
   : nums === null ? result = str.join('') + incrementor
   : result = str.join('') + numPlus.toString().padStart(nums[0].length, '0');
   
-  result answer;
+  return result;
 }
